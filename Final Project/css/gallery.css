@@ -1,0 +1,138 @@
+/*Animation...first second 0% second is 50% third second 100%
+* @keyframes only on css. not working on the head of the html
+*/
+@keyframes fadeIn {
+	0% {opacity:0;}
+	50% {opacity:0.4;}
+	100% {opacity:1;}
+}
+
+/* whatever row of paragraph outside the box will hide with overflow:hidden*/
+#box {
+	background-color:lightblue;
+	position:relative;
+	text-align:center;
+	width:700px;
+	margin:30px 270px 30px auto;
+	border:10px solid lightblue;
+	box-shadow:rgb(20,20,20) 5px 20px 35px;
+	overflow:hidden;	
+	animation-name:fadeIn;
+	animation-duration: 3s;
+	animation-iteration-count:1	; /*do not repeat the fadeIn*/
+	animation-delay:0s;  /*do right away*/
+}
+#lien1 {
+	width:10%;
+	font-size:50px;
+	border:solid .07em black;
+	border-radius:10px;
+	float:left;
+	position:relative;
+	text-align:center;
+	vertical-align:top;
+	margin-top:80px;
+}
+#lien2 {
+	width:10%;
+	font-size:50px;
+	border:solid .07em black;
+	border-radius:10px;
+	float:right;
+	position:relative;
+	text-align:center;
+	vertical-align:top;
+	margin-top:-550px;
+}
+
+#thumbnail{
+	margin:0;
+	padding:0;
+	overflow:auto;
+	list-style-type:none; /*set bulletin free*/
+	position:relative;
+	background-color:rgb(0,0,0);
+	width:700px;
+	
+}
+#thumbnail a {
+	transition: opacity .2s ease-in-out;
+	border: 1px solid rgb(255,255,255);	
+	width:35px;
+	height:35px;
+	float:right;
+	margin:10px 0 10px 10px; /*set thumbnails apart*/
+	opacity: .55;
+	overflow:hidden;
+}
+#thumbnail li {
+	display:inline-block;
+}
+
+#thumbnail a:hover {
+	opacity:1;
+}
+
+#slider li {
+	width:700px;
+	height:438px;
+	position:absolute;
+}
+
+#slider p{
+	position:absolute;
+	bottom:0;
+	left:0;
+	color:rgb(255,255,255);
+	background-color:rgba(0,0,0,.5);
+	width:100%;
+	z-index:inherit; /*stack item on top ;of each other*/
+	
+}
+	
+#slider span {
+	line-height:1.2em; 
+	padding:10px;
+	display:block;
+}	
+
+@keyframes moveTarget {
+	0% {left:-700px;}
+	100% {left:0px;}
+}
+	
+#slider li:target {  /*where the picture targeted*/
+	animation-name:moveTarget;
+	animation-duration:.5s;
+	animation-iteration-count:1;
+	top:0;
+	left:0;
+	z-index:10;
+}
+	
+/*fix last picture */	
+@keyframes moveIt {
+	0% {left:0px;}
+	50% {left:700px;}
+	100% {left:-700px;
+	z-index:5;}
+}	
+#slider li:not:target) {
+	animation-name: moveIt;
+	animation-duration:1.5s;
+	animation-iteration-count:1;
+	top:0;
+	left:0;
+}	
+
+#slider {
+	border-radius:10px;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	width:700px;
+	height:438px;
+	position:relative;
+	overflow:hidden;
+}
+

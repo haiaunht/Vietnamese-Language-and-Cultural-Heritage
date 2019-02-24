@@ -1,0 +1,26 @@
+.dropdown {
+position: relative;
+display: inline-block;
+}
+.dropdownList {
+background-color:rgba(0,0,0,0.1);
+color: white;
+padding: 16px;
+font-size: 18px;
+border: none;
+}
+.dropdown-content {
+position:absolute;
+display:none;
+z-index:1;
+}
+.dropdown-content a {
+color:yellow; 
+padding: 5px; 
+display:block;
+margin-left:24px;
+}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+

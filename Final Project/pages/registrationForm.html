@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<!--Hai-Au Bui - Website for Vietnamese Language and Cultural Heritage School-->
+		<meta charset="UTF-8" lang="en" lang="vi">
+		<title>VNLH.org</title>
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<link rel="stylesheet" type="text/css" href="../css/nav.css">
+		<style>
+		main h2 {
+		width:86%;
+		margin-left:88px;
+		background-color: lightblue;
+		color:black;
+		text-align:center;
+		}
+		div form {
+		width:80%;
+		background-color: lavender;
+		font-size:20px;
+		margin: 25px auto;
+		padding:40px;
+		}
+		input[type=submit] {
+		background-color:lightblue;
+		padding:15px;
+		margin:20px;
+		border-radius:10px;
+		}
+		input[type=reset] {
+		background-color:lightblue;
+		padding:15px;
+		margin:20px;
+		border-radius:10px;
+		}
+		input[type=submit]:hover {
+		background-color: #45a049;
+		}
+		input[type=reset]:hover {
+		background-color: #45a049;
+		}
+		input[type=text] {
+		border-radius: 4px;
+		padding:8px;
+		}
+		input[type=date] {
+		border-radius: 4px;
+		padding:8px;
+		}
+		input[type=email] {
+		border-radius: 4px;
+		padding:8px;
+		}
+		</style>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<img src="../images/Logo.PNG" alt="VNLH Logo" width="100" height="100" title="VNLH school" />			
+			<h2>Vietnamese Language and Cultural Heritage</h2>			
+			<nav role="navigation">
+				<ul>
+				  <li><a href="../index.html">Home</a></li>
+				   <li>
+				  <div class = "dropdown">
+				  <button class = "dropdownList"><a href="classes.html" >Classes</a></button>
+				  <div class="dropdown-content">
+					<a href="classes_Folder/preK.html">Pre-K</a>
+					<a href="classes_Folder/kindergarten.html">K</a>
+					<a href="classes_Folder/firstGrade.html">1st</a>
+					<a href="classes_Folder/secondGrade.html">2nd</a>
+					<a href="classes_Folder/thirdGrade.html">3rd</a>
+					<a href="classes_Folder/fourthGrade.html">4th</a>
+					<a href="classes_Folder/fifthGrade.html">5th</a>
+				  </div>
+				  </div>
+				  </li>	
+				  <li><a href="events.html">Events</a></li>
+				  <li><a href="gallery.html">Gallery</a></li>
+				  <li><a href="pages/registration.html" class="current">Registration</a></li>
+				  <li><a href="contact.html">Contact Us</a></li>				  
+			    </ul>
+			</nav>		
+		</header>
+		<main>
+			<div>
+			<h2>Registration Form</h2>
+			<form>
+				<b>First Name</b><br>
+				<input type="text" id="firstname" name="firstname" size="70" >
+				<br><br>
+				<b>Last Name:</b><br>
+				<input type="text" id="lastname" name="lastname" size="70">
+				<br><br>
+				<b>Date of birth:</b><br>
+				<input type="date" id="dateOfBirth" name="birthday" size="70">
+				<br><br>
+				<b>Address:</b><br>
+				<input type="text" id="address" name="address" size="70">
+				<br><br>
+				<b>Gender:</b>
+				<label class="radio-inline"><input type="radio" name="gender" value="male">Male</label>
+				<label class="radio-inline"><input type="radio" name="gender" value="female">Female</label>
+				<label class="radio-inline"><input type="radio" name="gender" value="other">Other</label>
+				<br><br>
+				<b>Classes:</b>
+				<label class="radio-inline"><input type="radio" name="pre-K" value="K">Kindergarten</label>
+				<label class="radio-inline"><input type="radio" name="1" value="firstGrade">First Grade</label>
+				<label class="radio-inline"><input type="radio" name="2" value="secondGrade">Second Grade</label>
+				<label class="radio-inline"><input type="radio" name="3" value="thirdGrade">Third Grade</label>
+				<label class="radio-inline"><input type="radio" name="4" value="fourthGrade">Fourth Grade</label>
+				<label class="radio-inline"><input type="radio" name="5" value="fifthGrade">Fifth Grade</label>
+				<br><br>
+				<b>Phone number:</b><br>
+				<input type="text" id="phonenumber" name="phonenumber" size="70">
+				<br><br>
+				<b>Email: </b><br>
+				<input type="email" id="email" name="email" size="70">
+				<br><br>
+				
+				<input type="submit" value="Submit" >
+				<input type="reset" value="Reset">
+			</div>
+		</main>
+		<footer>
+			<section class="location">
+				<h3 id="location"><a href="https://www.mapquest.com/us/wa/everett/98204-5722/200-120th-st-sw-47.889214,-122.236272" target="_blank">Location</a></h3>
+					<p>		
+					Mariner High School<br>
+					200 120th St. SW<br>
+					Everett, WA 98204<br><br>
+					</p>
+			</section>
+			<section>
+				<p>&copy;2018 Hai-Au</p><br>
+				<p>Please follow us on
+				<a href="https://facebook.com/TVNLH" target="_blank">
+				<img src="http://www.thsweb.org/assets/template/facebook_button.png" width="30" height="30"></a></p><br>	
+			</section>
+			<section class="personContact">
+				<h3><a href="contact.html" target="_blank">Contact Us</a></h3>
+				<p>Principal:<br>
+				Mr.Nguyễn Kim Di<br>
+				&#9742(425)-367-2112<br><br>
+			</section>	
+		</footer>
+	</div>
+</body>		
+</html>	

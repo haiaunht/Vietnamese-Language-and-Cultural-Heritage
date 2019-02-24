@@ -1,0 +1,100 @@
+
+body{
+	background-color:white;
+	
+}
+#wrapper {
+	width:1400px;	
+	border: solid 0.4em rgb(255,0,0);
+	margin: 0 auto;
+	overflow:auto;
+}
+/*---------style for header-------*/
+header {
+	background-image: url('../images/vnlh.jpg');
+	position:relative;
+}
+header h2 {
+	position:relation;	
+	font-size:60px;
+	color: yellow;
+	font-family: 'Time New Roman',Times ,serif;	
+	left:320px;
+	top:0px;
+	text-align:center;
+}
+main {
+	width:90%;
+	margin: 0.3em auto;
+	font-family: Gabriola, san-serif;
+	font-size:25px;
+}
+header nav ul{
+	background-color:rgba(0,0,0,0.6);
+	display:block;
+	text-align:center;
+}
+header nav ul li {
+	font-size:20px;
+	color:rgb(170,50,0);
+	display:inline-block;	
+	padding:10px;
+	text-align:center;
+	margin:5px;
+}
+header nav ul li a:link, header nav ul li a:visited { 
+	background-color:rgba(255,0,0,0.5);	 /*---green color inside the block---*/
+	padding:12px;
+	
+	border: solid .2em black;
+	border-radius:10px ; /*---radius has four value (30px 10px same as 30 10 30 10)----*/
+	color:white;
+}
+header nav ul li a:hover {
+	background-color: rgb(12,125,20);
+	color:rgb(255,255,255);
+}
+header nav ul li a:active {
+	background-color:rgb(0,0,0); /*---black color when you click---*/
+	color:rgb(170,255,170);
+}
+
+/*--------------style for body---------------*/
+
+body header h1 {
+	
+	position:absolute;
+	font-size:60px;
+	top:20px;
+	left:155px;
+	text-align:center;
+}
+
+main section .classname {
+	list-style-type:none;
+}
+main section ol li a  {
+	display:block;
+}
+
+/*------------------style for footer---------------------*/
+footer {
+	background-color: lightblue;
+	background-repeat:no-repeat;
+	color:black;
+	text-align:center;
+}
+footer section {
+	width:22%;
+	display:inline-table;
+	background-image: url('../images/chimlac.jpg');
+	vertical-align:top;
+	margin:15px;
+}
+.location {
+	padding-bottom:4px;
+	margin-right:120px;
+}
+.personContact {
+	margin-left:120px;
+}
